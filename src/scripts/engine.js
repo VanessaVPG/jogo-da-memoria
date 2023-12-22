@@ -42,7 +42,7 @@ function handleClick() {
 }
 
 function checkMatch() {
-  if(openCards[0].innerHTML === openCards[1].innerHTML) {
+  if(openCards[0].innerHTML === openCards[1].innerHTML && openCards[0] !== openCards[1]) {
     openCards[0].classList.add("boxMatch");
     openCards[1].classList.add("boxMatch");
   }else {
